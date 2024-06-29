@@ -1,0 +1,84 @@
+/* Skills.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.skills {
+    padding: 50px 10%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translateX(-50px);
+    width:100%;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .skills.animate {
+    opacity: 1;
+    width: 100%;
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  
+  .skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ededed;
+    font-weight: 600;
+  }
+  
+  .skills-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skills-card {
+    background-color:#111214 ;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid #00abf0;
+  }
+  
+
+  
+  .skills-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skills-card h3 {
+    font-size: 1.5em;
+    
+    color: #00abf0;
+    margin-bottom: 10px;
+  }
+  
+  .skills-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-card li {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  /* Apply Home section colors */
+  .skills {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .skills-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .skills-card li {
+    color: #777;
+  }
+  

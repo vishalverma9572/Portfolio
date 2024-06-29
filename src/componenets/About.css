@@ -1,0 +1,82 @@
+/* About.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+/* Container for the entire About section */
+.about-section{
+    margin-top: 50px;
+    /* min-height: 100vh; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    
+    color: #00abf0;
+    
+}
+
+/* Container for the text content */
+.about-me-container {
+    max-width: 700px;
+}
+
+.about-section h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color:#00abf0;
+    padding: 0 10%;
+    margin-bottom: -50px;
+    
+}
+
+
+
+.about-me-container p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0 40px;
+    line-height: 1.5;
+    color: #bbbbbb;
+}
+.about-me-container p span{
+    color: #00abf0;
+    font-size: 20px;
+}
+
+
+
+/* Styling for the profile image */
+.about_img img {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    /* Add any additional styling you want for the image */
+}
+
+/* //responsive */
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   
+    .about-me-container {
+        text-align: center;
+    }
+
+    .about_img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 1349px){
+    .about-section h2 {
+        
+        margin-bottom: 0px;
+        
+    }
+}

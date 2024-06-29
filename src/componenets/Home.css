@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Home.css */
+.animated-section {
+    opacity: 0;
+    
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .animated-section.animate {
+    opacity: 1;
+    
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out,width 1s ease-out;
+  }
+  
+.home{
+    margin-top: 75px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.home_container{
+    max-width:600px;
+
+}
+.home_container h1{
+    font-size: 50px;
+    font-weight: 600;
+    
+    
+}
+.home_container h1 span{
+    color: #00abf0;
+
+}
+.home_container h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00acf0ec;
+    margin-bottom: 25px;
+}
+.home_container p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0 40px;
+}
+.home_container .btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.btn-box .btn{
+    text-decoration: none;
+    position: relative;
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 159px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#081b29;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    
+    overflow: hidden; /* to hide the ::before */
+
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0 ;
+}
+.btn-box a:nth-child(2):hover{
+    color: #1f242d;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn-box a:nth-child(1):hover{
+    color: #00abf0;
+}
+
+.btn-box .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #1f242d;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.btn-box .btn:hover::before{
+    width: 100%;
+}
+
+
+.home_container .home_img{
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    
+    padding-bottom: 60px;
+}
+.home_img img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+/* //blur image when hover  by changing opacity*/
+.home_img img:hover{
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#00abf0;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 40px;
+    transition: all 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.5s;
+    
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+    height: 100%;
+    background-color: #00abf0;
+}
+.home-sci a:hover{
+    color: #081b29;
+    /* border-color: transparent; */
+}
+
+/* //responsive */
+@media screen and (max-width: 768px){
+    .home{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .home_container{
+        text-align: center;
+    }
+    .home_container h1{
+        font-size: 40px;
+    }
+    .home_container h3{
+        font-size: 28px;
+    }
+    .home_container p{
+        font-size: 14px;
+    }
+    .home_container .btn-box{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .btn-box .btn{
+        width: 140px;
+        font-size: 16px;
+    }
+    .home_img{
+        /* display: none; */
+    }
+    .home-sci{
+        margin-top: 20px;
+    }
+    .home-sci a{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
