@@ -48,6 +48,7 @@
     cursor: pointer;
     /* position: absolute;
     right:10%; */
+    transition: all 0.3s ease-in-out;
 }
 /* when scrolled a bit give it a translucent backgroung to make it visible */
 .header.scrolled {
@@ -76,5 +77,8 @@
 
     .navbar.open {
         display: flex;
+    }
+    .header.scrolled {
+        background-color: #1f242dfa; /* Adjust the color and opacity as needed */
     }
 }

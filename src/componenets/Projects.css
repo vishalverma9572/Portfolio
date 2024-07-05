@@ -1,0 +1,160 @@
+/* Projects.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.projects {
+  padding: 50px 13%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects h1{
+  font-size: 40px;
+  font-weight: 500;
+  color:#00abf0;
+  
+  margin-bottom: 1em;
+  text-align: left;
+    
+}
+
+.project-card {
+  background-color: #111214;
+
+  margin: 20px;
+
+  text-align: left;
+
+  border-radius: 10px;
+  padding: 20px;
+  width: 330px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.13);
+  transition: transform 0.3s ease;
+  border: 2px solid #00abf0;
+}
+
+.project-card:hover {
+  transform: scale(1.04);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #00abf0;
+  letter-spacing: 0.8px;
+}
+
+.project-card p {
+  margin: 20px 0;
+}
+ .animated-section {
+    opacity: 0;
+    transform: translateX(50%);
+    
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projects .animated-section.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* adjusting flex  */
+
+.projects .animated-section  {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+
+
+
+.project-card .btn-box {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.project-card .btn {
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.project-card a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.project-card a:nth-child(2):hover {
+  color: #111214;
+}
+
+.project-card a:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.project-card a:nth-child(1):hover {
+  color: #00abf0;
+  cursor: pointer;
+}
+
+.project-card .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #111214;
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 2.5px;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 50px 5%;
+    width: 100%;
+  }
+
+  .projects .animated-section{
+    transform: translateX(10px);
+  }
+
+  .projects .animated-section.animate{
+    transform: translateX(0);
+  }
+
+  
+
+  .project-card {
+    width: 95%;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  .projects .btn{
+    width:125px;
+    font-size: 0.85rem;
+  }
+}

@@ -11,9 +11,9 @@ const Skills = () => {
   
 
   return (
-    <section id='Skills' className={`skills ${inView ? 'animate' : ''}`} ref={ref}>
+    <section id='Skills' className={`skills`} >
       <h2>Technical Skills</h2>
-      <div className="skills-content">
+      <div className={`skills-content ${inView ? 'animate' : ''}`} ref={ref}>
         <div className="skills-card">
           <h3>Programming</h3>
           <ul>

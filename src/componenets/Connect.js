@@ -70,15 +70,17 @@ const Connect = () => {
             const user_id = process.env.REACT_APP_PUBLIC_KEY;
 
             console.log(service_id, template_id, templateParams, user_id);
-            setErrors({ email: '', subject: '', message: 'currently this service is not woking and is under maintainance use below email icon to mail me' });
+            // setErrors({ email: '', subject: '', message: 'currently this service is not woking and is under maintainance use below email icon to mail me' });
             
-            // emailjs.send(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_PUBLIC_KEY, templateParams, process.env.REACT_APP_PUBLIC_KEY)
-            //     .then((response) => {
-            //         console.log('SUCCESS!', response.status, response.text);
-            //         setSuccessMsg('Your message was sent successfully! I will reach out to you soon...');
-            //     }, (error) => {
-            //         console.log('FAILED...', error);
-            //     });
+            emailjs.send(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_PUBLIC_KEY)
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    setSuccessMsg('Your message was sent successfully! I will reach out to you soon...');
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+
+            
 
             
             
@@ -87,7 +89,7 @@ const Connect = () => {
 
     return (
         <section id="Connect" className="connect" ref={ref}>
-            <h1><span>Connect with Me</span></h1>
+            <h1>Connect with Me</h1>
             <h2>Contact Form</h2>
             <form className={`connect-form ${inView ? 'animate' : ''}`} onSubmit={handleSubmit}>
                 <input 
@@ -118,10 +120,12 @@ const Connect = () => {
                 {successmsg && <p className="success">{successmsg}</p>}
             </form>
             <br></br>
+            <br></br>
             <span>or</span>
             <br></br>
+            <br></br>
             <h2> Connect through</h2>
-        
+            <br></br>
             
             <div className='home-sci'>
                         <a href="https://www.linkedin.com/in/vishal-kumar-375a25250/" target="_blank" rel="noreferrer"><TiSocialLinkedin/></a>

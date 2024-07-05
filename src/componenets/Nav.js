@@ -23,7 +23,7 @@ export default function Nav() {
 
             // Check which section is in view based on scroll position
             for (const { section, ref } of sectionRefs) {
-                if (ref && ref.offsetTop <= scrollPosition + 50 && ref.offsetTop + ref.offsetHeight > scrollPosition + 50) {
+                if (ref && ref.offsetTop <= scrollPosition + 90 && ref.offsetTop + ref.offsetHeight > scrollPosition + 90) {
                     setActiveLink(section);
                 }
             }

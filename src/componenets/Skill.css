@@ -5,14 +5,12 @@
     padding: 50px 10%;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transform: translateX(-50px);
+    
     width:100%;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    
   }
   
-  .skills.animate {
+  .skills-content.animate {
     opacity: 1;
     width: 100%;
     transform: translateY(0);
@@ -20,17 +18,24 @@
   }
   
   .skills h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #ededed;
-    font-weight: 600;
-  }
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    color:#00abf0;
+    
+    margin-bottom: 1em;
+    text-align: left;
+    }
   
   .skills-content {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translateX(-10%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
   
   .skills-card {

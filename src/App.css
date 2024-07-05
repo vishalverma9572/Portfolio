@@ -8,7 +8,13 @@
 body{
   background-color: #1f242d;
   color:#ededed;
+  
+  
 }
+/* scroll x off */
+
+
+
 
 /* //remove scroll bar */
 ::-webkit-scrollbar {
