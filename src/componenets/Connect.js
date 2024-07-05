@@ -133,7 +133,7 @@ const Connect = () => {
                         <a href="https://www.instagram.com/hey_vishalverma" target="_blank" rel="noreferrer"><IoLogoInstagram/></a>
                         <a href="https://x.com/hey_vishalverma?t=3OK3GqPMBgpJle7qEQx84g&s=09" target="_blank" rel="noreferrer"><FaXTwitter/></a>
                         <a href="https://wa.me/919546926734" target="_blank" rel="noreferrer"><IoLogoWhatsapp/></a>
-                        <a href="tel:919546926734" target="_blank" rel="noreferrer"><IoCallOutline/></a>
+                        <a href="tel:+919546926734" target="_blank" rel="noreferrer"><IoCallOutline/></a>
                         <a href="mailto:vishalverma9572@gmail.com" target="_blank" rel="noreferrer"><MdOutlineEmail/></a>
 
             </div>  

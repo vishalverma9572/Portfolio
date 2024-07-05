@@ -4,7 +4,7 @@
 
 .modal-overlay {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -142,4 +142,21 @@
 .modal-content a:hover {
     
     color:#081b29;
+}
+
+@media screen and (max-width: 780px) {
+    .modal-content {
+        padding: 30px;
+        width:90%;
+    }
+    .modal-content h2 {
+        font-size: 1.5rem;
+    }
+    .modal-content ul li {
+        font-size: 0.95rem;
+    }
+    .modal-content a {
+        font-size: 1rem;
+    }
+
 }
