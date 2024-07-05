@@ -40,7 +40,7 @@ Welcome to my portfolio website! This project showcases my skills and projects i
 
 ## Images
 
-Include screenshots or images of your portfolio website here.
+No Images Go to Website.
 
 ## Getting Started
 
