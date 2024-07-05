@@ -1,70 +1,138 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vishal Kumar's Portfolio
 
-## Available Scripts
+Welcome to my portfolio website! This project showcases my skills and projects in web development. The website is built using React and includes various sections such as Home, About, Skills, Projects, and Connect.
+- Deployed Link: [https://portfoliovishal-vishal-kumar-s-projects.vercel.app/](https://portfoliovishal-vishal-kumar-s-projects.vercel.app/)
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Images](#images)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Home
+- A welcoming introduction to my portfolio website.
 
-### `npm test`
+### About
+- A brief description of who I am, my background, and my skills.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Skills
+- A section listing the technical skills and tools I am proficient in.
 
-### `npm run build`
+### Projects
+- Showcases various projects I have worked on.
+- Each project has a brief description, duration, and a button for more details.
+- Includes a link to view the source code on GitHub.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Connect
+- A contact form for visitors to get in touch with me.
+- Validates email, subject, and message fields.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Footer
+- Links to my social media profiles: LinkedIn, GitHub, Twitter, and Instagram.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Images
 
-### `npm run eject`
+Include screenshots or images of your portfolio website here.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these simple steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- npm
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/vishalverma9572/portfolio.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your environment variables:
+   ```plaintext
+   REACT_APP_PDF_DOWNLOAD_LINK=resume_link
+   REACT_APP_EMAIL_SERVICE_ID=service_id
+   REACT_APP_TEMPLATE_ID=template_id
+   REACT_APP_PUBLIC_KEY=public_key
+   REACT_APP_PRIVATE_KEY=private_key
+   ```
+4. Start the development server
+   ```sh
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+This website is designed to showcase my skills, projects, and professional background. It allows potential employers or clients to get in touch with me through the contact form.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+- React
+- CSS
+- EmailJS for sending emails from the contact form
+- React Icons for social media links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+```plaintext
+portfolio/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── Footer.js
+│   │   ├── Home.js
+│   │   ├── Modal.js
+│   │   ├── Projects.js
+│   │   ├── Skills.js
+│   │   └── AnimatedSection.js
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── ...
+├── .env
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Distributed under the MIT License. See `LICENSE` for more information.
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Vishal Kumar - [@LinkedIn](https://www.linkedin.com/in/vishal-kumar-375a25250/) - vishalverma9572@gmail.com
+
+Project Link: [https://github.com/vishalverma9572/portfolio](https://github.com/vishalverma9572/portfolio)
+
+Deployed Link: [https://portfoliovishal-vishal-kumar-s-projects.vercel.app/](https://portfoliovishal-vishal-kumar-s-projects.vercel.app/)
+
+
