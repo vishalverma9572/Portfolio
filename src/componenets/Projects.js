@@ -6,6 +6,18 @@ import { CgDetailsMore } from "react-icons/cg";
 import { useInView } from 'react-intersection-observer';
 
 const projects = [
+
+       {
+        title: 'QuizMaster',
+        duration: 'July 2024',
+        description: [
+            'Developed a full-stack quiz application using Node.js, Express, MongoDB, and React, featuring quiz creation, taking quizzes, managing quiz progress, and displaying quiz results.',
+            'Implemented auto-submit functionality for quizzes after the time limit is reached, along with progress saving to allow users to continue where they left off.',
+            'Designed a user-friendly interface with functionalities for creating, updating, and managing quizzes, along with detailed statistical analysis of quiz results.'
+        ],
+        briefDescription: 'A full-stack quiz application with advanced quiz management and statistical analysis features.',
+        codeLink: 'https://github.com/vishalverma9572/quizmaster'
+    },
     {
         title: 'LinkHub',
         duration: 'April 2024 - May 2024',
