@@ -1,7 +1,7 @@
 
 # Vishal Kumar's Portfolio
 
-Welcome to my portfolio website! This project showcases my skills and projects in web development. The website is built using React and includes various sections such as Home, About, Skills, Projects, and Connect.
+Welcome to my portfolio website! This project showcases my skills and projects in web development. The website is built using React and includes various sections such as Home, About, Skills, Projects and Connect.
 - Deployed Link: [https://portfoliovishal-vishal-kumar-s-projects.vercel.app/](https://portfoliovishal-vishal-kumar-s-projects.vercel.app/)
 
 ## Table of Contents
