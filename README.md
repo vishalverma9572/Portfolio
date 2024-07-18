@@ -21,7 +21,7 @@ Welcome to my portfolio website! This project showcases my skills and projects i
 - A welcoming introduction to my portfolio website.
 
 ### About
-- A brief description of who I am, my background, and my skills.
+- A brief description of who I am, my background,and my skills.
 
 ### Skills
 - A section listing the technical skills and tools I am proficient in.
