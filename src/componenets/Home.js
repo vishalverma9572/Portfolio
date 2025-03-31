@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { GrContactInfo } from "react-icons/gr";
-import pfpimg from '../assets/img/IMG_20240629_150632-removebg-preview.png';
+import pfpimg from '../assets/img/Home_img.jpg';
 import { TiSocialLinkedin } from "react-icons/ti";
 import { LuGithub } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
@@ -62,7 +62,9 @@ export default function Home() {
                 </div>
             </AnimatedSection>
             <div className='home_img'>
-                <img src={pfpimg} alt='Vishal Kumar' />
+                <div className="folded-image-container">
+                    <img src={pfpimg} alt='Vishal Kumar'  />
+                </div>
             </div>
         </section>
     )
